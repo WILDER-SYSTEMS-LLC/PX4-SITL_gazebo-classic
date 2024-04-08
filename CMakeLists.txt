@@ -522,7 +522,7 @@ file(GLOB models_list LIST_DIRECTORIES true ${PROJECT_SOURCE_DIR}/models/*)
 file(REMOVE_RECURSE ${PROJECT_SOURCE_DIR}/worlds/.DS_Store)
 file(GLOB worlds_list LIST_DIRECTORIES true ${PROJECT_SOURCE_DIR}/worlds/*)
 
-install(TARGETS ${plugins} mav_msgs nav_msgs std_msgs sensor_msgs DESTINATION ${PLUGIN_PATH})
+install(TARGETS ${plugins} mav_msgs nav_msgs physics_msgs std_msgs sensor_msgs DESTINATION ${PLUGIN_PATH})
 install(DIRECTORY ${models_list} DESTINATION ${MODEL_PATH})
 install(FILES ${worlds_list} DESTINATION ${RESOURCE_PATH}/worlds)
 
