@@ -6,12 +6,12 @@
     </include>
     <!--geotagged images camera-->
     <include>
-      <uri>model://geotagged_cam</uri>
+      <uri>model://fw_front_cam</uri>
       <pose>0 0 0 0 -1.571 0</pose>
     </include>
-    <joint name="geotagged_cam_joint" type="fixed">
+    <joint name="fw_front_cam_joint" type="fixed">
       <parent>plane::base_link</parent>
-      <child>geotagged_cam::camera_link</child>
+      <child>fw_front_cam::camera_link</child>
     </joint>
   </model>
 </sdf>
